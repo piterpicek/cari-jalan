@@ -20,8 +20,7 @@ else if (isset($_GET['api']) && !empty($_GET['api'])) {
     $lala       = json_decode($dataku3,true);
     if ($lala == "") $lalap = "<font color=\\\"red\\\">No Valid Mindmax</font>"; else $lalap = "<font color=\\\"green\\\">Valid Mindmax</font>";
     
-    //echo $lala['results'][0]['formatted_address'];
-
+    header('Content-Type: application/json');
     echo '{
         "ip":"'.$out['geoplugin_request'].'",
         "country_id":"'.$out['geoplugin_countryCode'].'",
