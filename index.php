@@ -18,7 +18,7 @@ else if (isset($_GET['api']) && !empty($_GET['api'])) {
 
     $dataku3    = curl("https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyBiszx96KFMqnD9OcN-ijDmTGYLqvsvhXA&address=".$out['geoplugin_latitude']."+".$out['geoplugin_longitude']."&result_type=street_address&language=en");
     $lala       = json_decode($dataku3,true);
-    if ($lala == "") $lalap = "No"; else $lalap = "Yes";
+    if ($lala == "") $lalap = "<font color=\"red\">No Valid Mindmax</font>"; else $lalap = "<font color=\"green\">Valid Mindmax</font>";
     
     //echo $lala['results'][0]['formatted_address'];
 
