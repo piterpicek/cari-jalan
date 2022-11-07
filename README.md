@@ -22,8 +22,8 @@ params:
 
 ## LOG
 1. `[2011] V1 php5.3 - bug 503 block request`
-2. `[2018] v1 revisi 7.1 - 503 api check proxy and update syntax`
-3. `[2021] revisi 2 stable - update syntax`
+2. `[2018] v1 revisi php7.1 - 503 api check proxy and update syntax`
+3. `[2021] revisi 2 stable php8.1 - update syntax`
 
 ## Disclaimer
 
